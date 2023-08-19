@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 h2 h3 h4 h5 h6 strong {
+  color: black;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.9rem;
+}
+
+p span label input textarea li {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main {
+  width: 100%;
+  position: relative;
+}
+
+
+/* nav menu */
+#navbar{
+  position:fixed;
+  width: 100%;
+  z-index: 99;
+  background-color:aquamarine;
+}
+
+.nav {
+  display: flex;
+  padding: 2rem 0;
+  margin: 0 0 0 0 ;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0 50%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-left: 10%;
+}
+
+.logo a {
+  color: black;
+}
+
+.logo a:hover {
+  color: #ffffff;
+}
+
+nav{
+  width: 100%;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: black;
+  margin: 0 20px;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+/* Burger */
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  margin: 7px;
+  transition: all 0.3s;
+  z-index: 99;
+}
+
+.burger {
+  display: none;
+  position: fixed;
+  top: 33px;
+  right: 35px;
+}
+
+#hero .container {
+  padding-top: 4rem;
+  height: 720px;
+  margin: 0 auto;
+  background-image: linear-gradient(rgb(35, 185, 255), rgb(0, 38, 255));
+}
+
+.container .photo {
+  width: 50%;
+  margin: 0 100px;
+  box-shadow: 10px black;
+}
+
+.container .photo img {
+  width: 50%;
+  float: left;
+}
+
+.container hr {
+  width: 60%;
+  border: 1spx solid black;
+  margin: auto;
+}
+
+.container .title {
+  margin: 0 150px;
+  top: 200px;
+  left: 10%;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+}
+
+.container .title h2 span {
+  color: #ffffff;
+  
+}
+
+.container title p{
+  top: 20px;
+}
+
+#about {
+  padding-top: 8rem;
+  height: 720px;
+  width: 80%;
+  margin: auto;
+}
+
+
+.about-title {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.about-title p {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.about-photo{
+  float: left;
+  position: relative;
+}
+
+.about-photo img{
+  width: 80%;
+}
+
+.about-desk{
+  margin: 50px 0 0 0;
+  width: 90%;
+}
+
+.about-desk h3{
+  font-size: 40px;
+  margin-top: 100px;
+}
+
+.about-desk p{
+  font-size: 20px;
+  text-align:left;
+  line-height: 25px;
+}
+
+.about-desk p:nth-child(3){
+  margin-top: 1rem;
+  font-size: 18px;
+}
+
+#project{
+  background-image: linear-gradient( rgb(0, 38, 255), rgb(35, 185, 255));
+  padding-top: 8rem;
+  height: 720px;
+
+}
+
+#project p{
+  color: #000000;
+}
+
+#project .judul p{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.project-contain{
+  padding-top: 4rem;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+}
+
+
+.projects{
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.projects img{
+  width: 50%;
+  display: flex;
+  margin: auto;
+}
+
+.projects p{
+  margin-top: 1rem;
+}
+
+#skills {
+  height: 720px;
+  padding-top: 8rem;
+}
+
+#skills .judul p{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#skills .container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top:5rem;
+  width: 80%;
+}
+
+#skills .skillss{
+  display: flex;
+  margin: 2rem 0;
+}
+
+#skills .skillss p{
+  width: 50%;
+  margin-left: auto;
+}
+
+#skills .container img{
+  width: 15%;
+  float: left;
+  box-shadow: 5px 10px 20px;
+}
+
+
+
+
+
+
