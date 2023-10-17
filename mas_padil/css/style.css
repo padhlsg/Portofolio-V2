@@ -28,11 +28,12 @@ nav {
 }
 
 nav.sticky {
-  background-color: rgb(136, 255, 112);
+  background-color: #8eff00;
   padding: 0.5rem 15%;
   margin: 1rem 5%;
   border-radius: 50px;
   width: 90%;
+  box-shadow: none 10px 100px greenyellow;
 }
 
 nav .logo {
@@ -87,7 +88,7 @@ nav.sticky a:hover {
   height: 800px;
   width: 100%;
   padding: 0 8rem;
-  box-shadow: inset 500px -250px 100px #000000;
+  box-shadow: inset 800px 0 700px 100px #000000;
 }
 .judul {
   color: white;
@@ -106,7 +107,7 @@ nav.sticky a:hover {
 .judul p span {
   font-family: "Phudu", cursive;
   font-weight: 600;
-  color: greenyellow;
+  color: #8eff00;
 }
 
 .judul .title p {
@@ -177,7 +178,7 @@ a:focus-visible {
   font-size: 0.85rem;
   border-radius: 0.5rem;
   overflow: hidden;
-  background-color: #0fff23;
+  background-color: #8eff00;
   position: relative;
 }
 
@@ -199,6 +200,7 @@ a:focus-visible {
 #about {
   padding-top: 6rem;
   min-height: 720px;
+  box-shadow: 100px -100px 100px black;
   color: white;
 }
 
@@ -234,6 +236,10 @@ a:focus-visible {
   width: 400px;
   cursor: pointer;
   transition: all 0.5s;
+  height: 300px;
+  object-fit: cover;
+  object-position: 0 -100px;
+  filter: drop-shadow(0 10px 10px yellowgreen);
 }
 
 .profile-about img:hover {
@@ -262,7 +268,7 @@ a:focus-visible {
   display: flex;
   margin: 30px 0;
   border: 1px solid rgb(83, 83, 83);
-  color: greenyellow;
+  color: #8eff00;
 }
 
 .profile-desk .complete .desk {
@@ -281,9 +287,10 @@ a:focus-visible {
 
 #project {
   min-height: 820px;
-  background-color: #1a1a1a;
   padding-top: 8rem;
   padding-bottom: 6rem;
+  box-shadow: 100px 100px 100px #1f1f1f;
+  background-color: #1f1f1f;
 }
 
 .judul-project {
@@ -307,7 +314,7 @@ a:focus-visible {
 }
 
 .title-projek p {
-  color: #29ff5e;
+  color: #8eff00;
 }
 
 .container-projek {
@@ -320,16 +327,16 @@ a:focus-visible {
 }
 
 .projek {
-  background-color: #313131;
   width: 300px;
   padding: 30px;
   color: white;
   transition: all 0.5s;
   border-radius: 10px;
+  background-color: #55585c;
 }
 
 .projek:hover {
-  background-color: #29ff5e;
+  background-color: #8eff00;
   color: #000000;
   transition: all 0.5s;
   box-shadow: 10px 10px 10px #000000;
@@ -347,7 +354,7 @@ a:focus-visible {
 #skills {
   min-height: 720px;
   padding-top: 6rem;
-  background-color: #363636;
+  background-color: #000000;
 }
 
 .judul-skills {
@@ -373,12 +380,12 @@ a:focus-visible {
   width: 100%;
   flex-direction: column;
   font-size: 50px;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(122, 122, 122);
   transition: all 0.5s;
 }
 
 .skill:hover {
-  background-color: white;
+  background-color: #f1f1f1;
   transition: all 0.5s;
 }
 
@@ -401,7 +408,6 @@ a:focus-visible {
 
 #skill-3 i {
   color: #f7e025;
-  background: black;
 }
 
 #skill-4 i {
@@ -415,187 +421,40 @@ a:focus-visible {
 /* Experience */
 
 #experience {
-  min-height: 1120px;
-  background-color: #1a1a1a;
+  min-height: 820px;
   padding-top: 6rem;
+  box-shadow: 0 50px 8px #131313;
+  background-size: cover;
+  background-color: #131313;
+  background-blend-mode: darken;
+  background-image: url("/img/background-exp1.jpg");
 }
 
-.judul-experience {
-  margin-left: 100px;
+.judul-exp {
+  margin-left: 80px;
 }
 
-.judul-experience p {
-  font-size: 30px;
-  color: white;
+.judul-exp p {
+  font-size: 40px;
+  color: #ffffff;
+  margin: 20px 0;
 }
 
-.w3-bar {
+.experience {
+  width: 80%;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.experience ul {
   display: flex;
-  justify-content: center;
-  margin: 0 80px;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
-.w3-bar button {
-  margin: 0 30px;
-  width: 100px;
-  padding: 10px;
-  border-radius: 50px;
-  border: none;
-  box-shadow: 10px 10px 10px black;
-}
-
-.w3-bar button:hover {
-  background-color: #000000;
-  color: white;
-}
-
-.container-experience {
-  width: 85%;
-  margin: 0 auto;
-}
-
-.exp {
-  margin: 50px 0;
-}
-
-.judul-pengalaman {
-  display: flex;
-  justify-content: center;
-  margin: 30px 0;
-}
-
-.judul-pengalaman p {
-  font-size: 30px;
-  color: white;
-}
-
-.slider {
-  margin: 0 auto;
-  max-width: 940px;
-}
-
-.slide_viewer {
-  height: 340px;
-  overflow: hidden;
-  position: relative;
-}
-
-.slide_group {
-  height: 100%;
-  position: relative;
-  width: 100%;
-}
-
-.slide {
-  display: none;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  object-fit: cover;
-}
-
-.slide img {
-  width: 100%;
-  height: 400px;
-}
-
-.slide:hover {
-  height: 1000px;
-}
-
-.slide:first-child {
-  display: block;
-}
-
-.slide:nth-of-type(1) {
-  background: #d7a151;
-}
-
-.slide:nth-of-type(2) {
-  background: #f4e4cd;
-}
-
-.slide:nth-of-type(3) {
-  background: #c75534;
-}
-
-.slide:nth-of-type(4) {
-  background: #d1d1d4;
-}
-
-.slide_buttons {
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
-}
-
-a.slide_btn {
-  color: #474544;
-  font-size: 42px;
-  margin: 0 0.175em;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.slide_btn.active,
-.slide_btn:hover {
-  color: #49e749;
-  cursor: pointer;
-}
-
-.directional_nav {
-  height: 340px;
-  margin: 0 auto;
-  max-width: 940px;
-  position: relative;
-  top: -340px;
-}
-
-.previous_btn {
-  bottom: 0;
-  left: 100px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-}
-
-.next_btn {
-  bottom: 0;
-  margin: auto;
-  position: absolute;
-  right: 100px;
-  top: 0;
-}
-
-.previous_btn,
-.next_btn {
-  cursor: pointer;
-  height: 65px;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -moz-transition: opacity 0.4s ease-in-out;
-  -ms-transition: opacity 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
-  width: 65px;
-}
-
-.previous_btn:hover,
-.next_btn:hover {
-  opacity: 1;
-}
-
-@media only screen and (max-width: 767px) {
-  .previous_btn {
-    left: 50px;
-  }
-  .next_btn {
-    right: 50px;
-  }
+.experience ul li {
+  margin: 0 100px;
+  list-style-position: inside  ;
 }
 
 @media (max-width: 600px) {

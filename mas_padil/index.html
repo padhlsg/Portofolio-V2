@@ -5,122 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fadhil Swarigading</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/flickity.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <!-- header -->
-    <header>
-      <div id="navbar">
-        <div id="main">
-          <div class="nav">
-            <div class="logo">
-              <a href="#hero">FL</a>
-            </div>
-            <nav>
-              <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
 
-            <div class="burger">
-              <div class="line1"></div>
-              <div class="line1"></div>
-              <div class="line1"></div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </header>
-    <!-- end header -->
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <nav>
+      <div class="logo">
+        <a href="#hero"><img src="img/logo3.png" alt="" /></a>
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience ">Experience</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
-    <!-- Jumborton -->
-
+    <!-- Jumbotron -->
     <section id="hero">
-      <div class="container">
-        <div class="photo">
-          <img src="img/profile2.png" />
+      <div class="judul">
+        <div class="nama">
+          <p>Fadhil <span>Swarigading</span></p>
         </div>
         <div class="title">
-          <h2>Fadhil <span>Swarigading</span></h2>
-          <hr />
-          <p>Student | Programmer</p>
+          <p><span>Front-End</span> Developer</p>
         </div>
+        <button class="button-def button-3"><p>Hire me</p></button>
       </div>
     </section>
-
-    <!-- end jumbotron -->
+    <!-- End Jumbotron -->
 
     <!-- About -->
     <section id="about">
-      <div class="about-title">
-        <p>About</p>
+      <div class="judul-about">
+        <p>ABOUT</p>
       </div>
-      <div class="about-photo">
-        <img src="img/profile.jpeg">
-      </div>
-      <div class="about-desk">
-          <h3>Fadhil Swarigading</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, aspernatur tenetur consectetur quo corrupti laudantium? Doloribus blanditiis placeat consequuntur, non impedit hic sunt quas cum in? Ut cumque officiis voluptates.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, reiciendis non ad dolores adipisci sunt. Deleniti laborum quisquam magnam voluptas?</p>
+      <div class="container">
+        <div class="profile-about">
+          <p>I can deliver result that exceed your expectations</p>
+          <img src="img/profile-fix10.png" alt="" />
+        </div>
+        <div class="profile-desk">
+          <i class="bx bxs-cube bx-spin bx-flip-horizontal"></i>
+          <p>Memiliki bekal pendidikan dari SMK 1 Perguruan cikini. Yang membuat saya tertarik dengan html css dan javascript, hingga menjadi bisa membuat macam macam website dengan bahasa tersebut.</p>
+          <div class="complete">
+            <div class="desk">
+              <h1>5+</h1>
+              <p>Project Selesai</p>
+            </div>
+            <div class="desk">
+              <h1>85+</h1>
+              <p>Penilaian</p>
+            </div>
+            <div class="desk">
+              <h1>2.5+</h1>
+              <p>Tahun Pengalaman</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- End about -->
+    <!-- End About -->
 
     <!-- Project -->
     <section id="project">
-      <div class="judul">
-        <p>Projects</p>
+      <div class="judul-project">
+        <p>PROJECT</p>
       </div>
-        <div class="project-contain">
-        <div id="project1" class="projects">
-          <img src="img/projek-1.png" alt="">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis sequi temporibus voluptas ullam distinctio commodi!</p>
+      <div class="title-projek">
+        <h1>Selected Work</h1>
+        <p>2022-2023</p>
+      </div>
+      <div class="container-projek">
+        <div class="projek" id="projek1" data-aos="fade-up" data-aos-duration="1000" style="transition: 0.5s">
+          <img src="img/projek-1.png" alt="" />
+          <p>Membuat Website Portofolio, menggunakan Framework Boostrap 5</p>
         </div>
-        <div id="project2" class="projects">
-          <img src="img/projek-2.png" alt="">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis sequi temporibus voluptas ullam distinctio commodi!</p>
+        <div class="projek" id="projek2" data-aos="fade-up" data-aos-duration="1000" style="transition: 0.5s">
+          <img src="img/projek-2.png" alt="" />
+          <p>Ikut serta pembuatan game horror, Silent Windows Menggunakan Unity</p>
         </div>
-        <div id="project3" class="projects">
-          <img src="img/projek-3.png" alt="">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis sequi temporibus voluptas ullam distinctio commodi!</p>
-        </div>
+        <div class="projek" id="projek3" data-aos="fade-up" data-aos-duration="1000" style="transition: 0.5s">
+          <img src="img/projek-3.png" alt="" />
+          <p>Membuat game AR, Penjelasan VGA Menggunakan Unity dan Vuforia engine</p>
         </div>
       </div>
     </section>
-    <!-- End Project -->
+
+    <!-- Akhir About -->
 
     <!-- Skills -->
 
-      <section id="skills">
-        <div class="judul">
-          <p>Skills</p>
+    <section id="skills">
+      <div class="judul-skills">
+        <p>SKILLS</p>
+        <p>I'm an expert in...</p>
+      </div>
+      <div class="container-skill">
+        <div class="skill" id="skill-1">
+          <i class="bx bxl-html5"></i>
+          <p>HTML</p>
         </div>
-        <div class="container">
-          <div id="skills1" class="skillss">
-            <img src="img/skils1.png" alt="">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas culpa, similique nesciunt ratione commodi odio, nulla voluptatibus sunt deleniti velit praesentium ut facilis, minus laboriosam. Repellat ducimus quod itaque doloremque!</p>
-          </div>
-          <div id="skills2" class="skillss">
-            <img src="img/skils2.png" alt="">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas culpa, similique nesciunt ratione commodi odio, nulla voluptatibus sunt deleniti velit praesentium ut facilis, minus laboriosam. Repellat ducimus quod itaque doloremque!</p>
-          </div>
-          <div id="skills3" class="skillss">
-            <img src="img/skils3.png" alt="">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas culpa, similique nesciunt ratione commodi odio, nulla voluptatibus sunt deleniti velit praesentium ut facilis, minus laboriosam. Repellat ducimus quod itaque doloremque!</p>
-          </div>
+        <div class="skill" id="skill-2">
+          <i class="bx bxl-css3"></i>
+          <p>CSS</p>
         </div>
-      </section>
+        <div class="skill" id="skill-3">
+          <i class="bx bxl-javascript"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill" id="skill-4">
+          <i class="bx bxl-figma"></i>
+          <p>Figma</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- End Skills -->
-  </body> 
+    <!-- Akhir Skills -->
+
+    <!-- Experience -->
+
+    <section id="experience">
+      <div class="judul-exp">
+        <p>Experience</p>
+      </div>
+      <div class="experience">
+        <ul>
+          <li>2021 Code BLcok</li>
+          <li>2022</li>
+          <li>2023</li>
+        </ul>
+      </div>
+      <div class="education"></div>
+    </section>
+
+    <!-- Akhir Experience -->
+
+    <script src="js/script.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+  </body>
 </html>
