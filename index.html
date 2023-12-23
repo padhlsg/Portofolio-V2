@@ -25,8 +25,8 @@
         <li><a href="#about">About</a></li>
         <li><a href="#project">Project</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <nav>
@@ -103,17 +103,19 @@
           </div>
         </div>
         <div class="kanan-about" data-aos="fade-left" data-aos-duration="1000">
-          <p>
-            <span>Profile</span>
-            <br />
-            Hai Saya Fadhil, seorang pelajar di SMK 1 Perguruan Cikini dengan semangat tinggi dalam Jurusan Rekayasa Perangkat Lunak (RPL).
-          </p>
-          <p>
-            <span>Aktivitas</span>
-            <br />
-            Saya terpesona oleh dunia teknologi, dan saat ini saya sedang merajut karya-karya hebat dalam pembuatan website, aplikasi, dan game.
-          </p>
-          <p>Dengan setiap proyek yang saya kerjakan, saya tidak hanya menciptakan kode, tetapi juga merangkai cerita digital yang memikat.</p>
+          <div class="desk-about">
+            <p>
+              <span>Profile</span>
+              <br />
+              Hai Saya Fadhil, seorang pelajar di SMK 1 Perguruan Cikini dengan semangat tinggi dalam Jurusan Rekayasa Perangkat Lunak (RPL).
+            </p>
+            <p>
+              <span>Aktivitas</span>
+              <br />
+              Saya terpesona oleh dunia teknologi, dan saat ini saya sedang merajut karya-karya hebat dalam pembuatan website, aplikasi, dan game.
+            </p>
+            <p>Dengan setiap proyek yang saya kerjakan, saya tidak hanya menciptakan kode, tetapi juga merangkai cerita digital yang memikat.</p>
+          </div>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -322,9 +324,10 @@
           </div>
         </div>
         <div class="kanan-contact">
-          <form action="#">
-            <input type="text" name="nama" id="nama" placeholder="Name" />
-            <input type="email" name="email" id="email" placeholder="Email" />
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="06c04a5a-0adb-4aee-9a63-999c90ab97ec" />
+            <input type="text" name="nama" id="nama" placeholder="Name" required />
+            <input type="email" name="email" id="email" placeholder="Email" required />
             <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
             <button>Send</button>
           </form>
@@ -336,8 +339,12 @@
 
     <!-- Footer -->
 
-    <!-- End Footer -->
+    <footer>
+      <p>Muhammad Fadhil Swarigading © 2023 All rights reserved</p>
+    </footer>
 
+    <!-- End Footer -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
   </body>

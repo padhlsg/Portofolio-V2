@@ -192,7 +192,7 @@ nav.sticky a:hover {
 
 .social-hero {
   display: flex;
-  width: 200px;
+  max-width: 200px;
   justify-content: space-between;
   margin: 30px 0;
 }
@@ -267,10 +267,9 @@ nav.sticky a:hover {
   background-color: #f993179a;
   padding: 10px;
   border-radius: 10px;
-  transition: all 0.5s;
 }
 
-.kanan-about p {
+.desk-about p {
   padding: 10px;
   width: 500px;
   align-items: center;
@@ -281,14 +280,14 @@ nav.sticky a:hover {
   letter-spacing: 1px;
 }
 
-.kanan-about p:nth-child(2) {
+.desk-about p:nth-child(2) {
   padding-left: 100px;
 }
 .kanan-about:hover {
   background-color: #f99417;
 }
 
-.kanan-about p span {
+.desk-about p span {
   font-size: 18px;
   font-weight: 600;
 }
@@ -376,7 +375,7 @@ nav.sticky a:hover {
 
 #skills {
   background-color: #f99417;
-  height: 300px;
+  min-height: 300px;
   display: flex;
   align-items: center;
 }
@@ -386,6 +385,7 @@ nav.sticky a:hover {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .skill {
@@ -425,7 +425,6 @@ nav.sticky a:hover {
 
 #experience {
   padding-top: 6rem;
-  min-height: 720px;
 }
 
 .judul-exp p {
@@ -562,6 +561,24 @@ nav.sticky a:hover {
 
 /* End Contact */
 
+/* Footer */
+
+footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #4d4c7d;
+}
+
+footer p {
+  text-align: center;
+  margin: auto;
+  color: #f1f1f1;
+  font-size: 15px;
+}
+
+/* End Footer */
+
 @media (max-width: 600px) {
   nav {
     display: none;
@@ -616,10 +633,10 @@ nav.sticky a:hover {
     margin-bottom: 5px;
     position: relative;
 
-    background: #0fff23;
+    background: #363062;
     border-radius: 3px;
 
-    z-index: 1;
+    z-index: 99;
 
     transform-origin: 4px 0px;
 
@@ -645,7 +662,7 @@ nav.sticky a:hover {
   #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #ffffff;
+    background: #616079;
   }
 
   #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -663,7 +680,7 @@ nav.sticky a:hover {
     margin: 0 0 0 -50px;
     padding: 100px 10px;
 
-    background: #29ff5e;
+    background: #363062;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
 
@@ -676,6 +693,10 @@ nav.sticky a:hover {
   #menu li {
     padding: 10px 10px;
     font-size: 22px;
+  }
+
+  #menu li a {
+    color: #f1f1f1;
   }
 
   #menu .icon-menu {
@@ -712,6 +733,11 @@ nav.sticky a:hover {
     order: 1;
   }
 
+  .social-hero {
+    width: 300px;
+    margin: 20px auto;
+  }
+
   .title-hero {
     width: auto;
   }
@@ -737,9 +763,17 @@ nav.sticky a:hover {
     max-height: 120px;
   }
 
+  .kiri-contact {
+    width: auto;
+  }
+
   .kanan-about p {
     width: auto;
     text-align: center;
+  }
+
+  .kanan-contact textarea {
+    width: auto;
   }
 
   .kanan-about p:nth-child(2) {
@@ -753,5 +787,68 @@ nav.sticky a:hover {
 
   /* Skill(Responsive) */
 
+  .container-skill {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill {
+    padding: 10px 0;
+    flex-direction: column;
+  }
+
+  .foto-skill {
+    flex-direction: row;
+  }
+
+  .skill:nth-child(1) .foto-skill i {
+    margin: 0 10px;
+  }
+
+  .desc-skill p {
+    text-align: center;
+  }
+
   /* End Skill (Responsive) */
+
+  /* Experience (Responsive) */
+
+  .container-exp {
+    flex-direction: column-reverse;
+  }
+
+  .kanan-exp {
+    display: flex;
+    justify-content: center;
+  }
+
+  .isi-exp {
+    width: auto;
+  }
+
+  .title-exp {
+    margin: 10px 0;
+  }
+
+  .title-exp p {
+    text-align: center;
+  }
+
+  .kanan-exp img {
+    width: 300px;
+  }
+
+  /* End Experience (Responsive) */
+
+  /* Contact (Responsive) */
+
+  .container-contact {
+    flex-direction: column;
+  }
+
+  .kanan-contact input {
+    width: auto;
+  }
+
+  /* End Contact (Responsive) */
 }
